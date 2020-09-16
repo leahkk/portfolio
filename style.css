@@ -1,18 +1,50 @@
 body {
-  background-color: #F5FFA;
+  background-color: #FFFFE6;
 }
 
 h1 {
   color: #191970;
   font-size: 36px;
   font-family: "Courier New", "Lucida Console", monospace;
+  background-color: #E6E6FF;
+  padding: 50px;
+  border: 10px #191970;
 }
 
-h2, h2, h2 {
+h2 {
   color: #191970;
   font-family: "Courier New", "Lucida Console", monospace;
 }
 
+.contact {
+  color: #FF0066;
+  font-style: italic;
+}
+
 p {
   color: #7575A9;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
 }
