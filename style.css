@@ -1,5 +1,61 @@
-body {
-  background-color: #FFFFE6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container {
+  background-color: #5995DA;
+}
+
+.contact-container {
+  background-color: #B2D6FF;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) { /* tablet style */
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+  .menu-container,
+  .content-container,
+  .contact-container,
+  .project {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 961px) { /* desktop style */
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  body {
+    background-color: #FFFFE6; /* Blue */
+  }
+  .menu-container,
+  .content-container,
+  .contact-container,
+  .project {
+    width: 25%;
+  }
 }
 
 h1 {
@@ -14,6 +70,13 @@ h1 {
 h2 {
   color: #191970;
   font-family: "Courier New", "Lucida Console", monospace;
+}
+
+.menu {
+  border: 5px #191970;
+  justify-content: space-around;
+  display: flex;
+  width: 400px;
 }
 
 .contact {
